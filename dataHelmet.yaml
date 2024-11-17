@@ -1,0 +1,5 @@
+train: data/train/images
+val: data/valid/images
+
+nc: 10  # number of classes
+names: ['Hardhat', 'Mask', 'NO-Hardhat', 'NO-Mask', 'NO-Safety Vest', 'Person', 'Safety Cone', 'Safety Vest', 'machinery', 'vehicle']
