@@ -1,6 +1,16 @@
 from ultralytics import YOLO
 import cv2
-import math 
+import math
+
+''''This code is for running the trained YOLO model on the webcam feed.
+it can detect objects in real-time and display the class name and confidence score on the webcam feed.
+The code uses the ultralytics YOLO library to load the custom trained YOLO model and run inference on the webcam feed.
+The code captures frames from the webcam using OpenCV and processes the results from the YOLO model to draw bounding boxes around detected objects.
+The class names and confidence scores are displayed on the webcam feed for each detected object.
+The code runs in a loop to continuously capture frames from the webcam and display the detections.
+'''
+
+
 # start webcam
 cap = cv2.VideoCapture(0)
 cap.set(3, 640)
